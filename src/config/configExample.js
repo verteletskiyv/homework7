@@ -3,4 +3,5 @@ export default {
   USERS_SERVICE: '',
   ANY_SERVICE1: '',
   ANY_SERVICE2: '',
+  someSecretKey: '',
 }
