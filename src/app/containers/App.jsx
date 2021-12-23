@@ -41,11 +41,6 @@ const App = () => {
               <Route path={`/${PAGES.INITIAL}`}>
                 <PageInitial />
               </Route>
-              <Route path={`/somePath`}>
-                <div>
-                  Some content
-                </div>
-              </Route>
               <Redirect from="*" to={`/${PAGES.INITIAL}`} />
             </Switch>
         )}
