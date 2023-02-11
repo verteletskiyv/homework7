@@ -7,5 +7,10 @@
   "page.initial": "Main",
   "password": "Пароль",
   "signIn": "Вхiд",
-  "signUp": "Вихiд"
+  "signUp": "Вихiд",
+  "save": "Зберегти",
+  "title": "Назва",
+  "author": "Автор",
+  "genre": "Жанр",
+  "yearWritten": "Рік Публікації"
 }

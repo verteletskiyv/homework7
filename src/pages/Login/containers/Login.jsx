@@ -12,8 +12,7 @@ const getClasses = makeStyles(() => ({
   },
 }));
 
-const Login = ({
-}) => {
+const Login = ({}) => {
   const classes = getClasses();
   return (
     <div className={classes.container}>

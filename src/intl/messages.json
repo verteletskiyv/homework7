@@ -7,5 +7,10 @@
   "page.initial": "Main",
   "password": "Password",
   "signIn": "Sign in",
-  "signUp": "Sign up"
+  "signUp": "Sign up",
+  "save": "Save",
+  "title": "Title",
+  "author": "Author",
+  "genre": "Genre",
+  "yearWritten": "Year Written"
 }

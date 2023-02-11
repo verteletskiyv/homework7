@@ -2,9 +2,7 @@ import classNames from 'classnames';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import React from 'react';
-import {
-  Link as InternalLink,
-} from 'react-router-dom';
+import {Link as InternalLink} from 'react-router-dom';
 import ExternalLink from '@material-ui/core/Link';
 
 const getClasses = makeStyles(() => ({

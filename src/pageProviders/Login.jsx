@@ -16,7 +16,7 @@ const Login = () => {
         locationSearch: locationSearch.redirectLocationSearch
           ? JSON.parse(locationSearch.redirectLocationSearch)
           : locationSearch,
-        path: locationSearch.redirectPathname || `/${PAGES.INITIAL}`,
+        path: `/${PAGES.INITIAL}`,
       });
     }
   }, [user.isAuthorized]);

@@ -1,12 +1,5 @@
-import {
-  getJson,
-  postJson,
-} from 'requests';
-import {
-  clearToken,
-  getToken,
-  setToken,
-} from 'token';
+import { getJson, postJson } from 'requests';
+import { clearToken, getToken, setToken } from 'token';
 import config from 'config';
 
 import {
@@ -34,9 +27,8 @@ const getUser = () => {
     USERS_SERVICE,
   } = config;
 
-  return getJson({
-    url: `${BASE_URL}${USERS_SERVICE}/user/get`,
-  }).catch(() => {
+  return getJson({url: `${BASE_URL}${USERS_SERVICE}/user/get`})
+      .catch(() => {
     const storage = {
       '123123': {
         authorities: [
@@ -219,9 +211,7 @@ const signOut = () => {
 
   return postJson({
     url: `${BASE_URL}${USERS_SERVICE}/user/signOut`,
-  }).catch(() => {
-    // TODO: this catch() is just a stub, which should be removed
-  });
+  })
 };
 
 export const fetchSignOut = () => (dispatch) => {
@@ -230,6 +220,9 @@ export const fetchSignOut = () => (dispatch) => {
     .then(() => {
       clearToken();
       dispatch(successSignOut());
-  }).catch(() => dispatch(errorSignOut()))
+  }).catch(() => {
+        clearToken();
+      })
+      .catch(() => dispatch(errorSignOut()))
 };
 

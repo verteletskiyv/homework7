@@ -10,11 +10,7 @@ import Tabs from 'components/Tabs';
 import TabsContent from 'components/TabsContent';
 import TextField from 'components/TextField';
 import Typography from 'components/Typography';
-
-import {
-  fetchSignIn,
-  fetchSignUpAndSignIn,
-} from 'app/actions/user';
+import { fetchSignIn, fetchSignUpAndSignIn } from 'app/actions/user';
 
 const getClasses = makeStyles(() => ({
   actionItem: {
@@ -81,9 +77,7 @@ const initialState = {
   selectedTab: AVAILABLE_TABS.login,
 };
 
-const AuthorizationForm = ({
-  onSuccess,
-}) => {
+const AuthorizationForm = ({onSuccess}) => {
   const classes = getClasses();
   const dispatch = useDispatch();
   const user = useSelector(({ user }) => user);
